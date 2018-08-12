@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ArcMap_Raster_Button</Name>
+  <AddInID>{67394534-0935-4091-a900-67e075bf97b6}</AddInID>
+  <Description>This Add-In Tool will load and properly symbolize the raster layer chosen by a user.</Description>
+  <Version>1.0</Version>
+  <!--<Image>Images\Button_AddRaster3.png</Image>-->
+  <Author>dcl160230</Author>
+  <Company></Company>
+  <Date>6/9/2018</Date>
+  <Targets>
+    <Target name="Desktop" version="10.5" />
+  </Targets>
+  <AddIn language="CLR" library="ArcMap_Raster_Button.dll" namespace="ArcMap_Raster_Button">
+    <ArcMap>
+      <Commands>
+        <Button id="ArcMap_Raster_Button_Button_AddRaster" class="Button_AddRaster" message="Add-In Button created by David Lindsey while attending UT-Dallas." caption="Add Raster Layer" tip="This Add-In Button will allow users to import and properly symbolize a remote sensing image based on appropriate band combinations." category="Add-In Controls" image="Images\Button_AddRaster3.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
